@@ -14,7 +14,7 @@ title : 文章分类
 
 {% for post in category[1] %}
 
-- [{{ post.title }}]({{ post.url }})
+- [{{ post.title }}](/blog/{{ post.url }})
 
 {% endfor %}
 

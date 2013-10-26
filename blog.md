@@ -4,9 +4,9 @@ title: shines77's blog
 ---
 
 {% for post in site.posts %}
-  - ### [{{ post.title }}]({{ post.url }}) <time>{{ post.date | date: '%Y-%m-%d' }}</time>
+  - ### [{{ post.title }}](/blog/{{ post.url }}) <time>{{ post.date | date: '%Y-%m-%d' }}</time>
 
   {{ post.summary }}
 
-  [全文阅读 &raquo;]({{ post.url }})
+  [全文阅读 &raquo;](/blog/{{ post.url }})
 {% endfor %}

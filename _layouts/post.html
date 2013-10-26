@@ -7,7 +7,7 @@ layout: default
 	<div class="c9">
 		分类：
 			{% for cg in page.categories %}
-			<a href="./category.html#{{cg}}">{{cg}}</a>
+			<a href="/blog/category.html#{{cg}}">{{ cg }}</a>
 			{% if forloop.index < forloop.length %}
 			,
 			{% endif %}
@@ -42,8 +42,8 @@ layout: default
 </div>
 <!--Disqus end-->
 
-<script src="./assets/js/jquery-min.js"></script>
-<script src="./assets/js/fullscreen.js"></script>
+<script src="/blog/assets/js/jquery-min.js"></script>
+<script src="/blog/assets/js/fullscreen.js"></script>
 <script type="text/javascript">
 $(function() {
 	var global = window;

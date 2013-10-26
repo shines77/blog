@@ -8,6 +8,6 @@ title : 文章列表
 
 {% for post in site.posts %}
 
-- {{ post.date | date: "%Y-%m-%d"}} &raquo; [{{ post.title }}](/blog/{{ post.url }})
+- {{ post.date | date: "%Y-%m-%d"}} &raquo; [{{ post.title }}](/blog{{ post.url }})
 
 {% endfor %}

@@ -6,11 +6,11 @@ title: shines77's blog
 {% for post in site.posts %}
 
 <ul>
-	<li><h3><a href="/blog/{{ post.url }}">{{ post.title }}</a> <time>{{ post.date | date: '%Y-%m-%d' }}</time></h3></li>
+	<li><h3><a href="/blog{{ post.url }}">{{ post.title }}</a> <time>{{ post.date | date: '%Y-%m-%d' }}</time></h3></li>
 </ul>
 
 {{ post.summary }}
 
-<p><a href="/blog/{{ post.url }}">全文阅读 &raquo;</a></p>
+<p><a href="/blog{{ post.url }}">全文阅读 &raquo;</a></p>
 
 {% endfor %}

@@ -7,7 +7,7 @@ layout: default
 	<div class="c9">
 		分类：
 			{% for cg in page.categories %}
-			<a href="/category.html#{{cg}}">{{cg}}</a>
+			<a href="./category.html#{{cg}}">{{cg}}</a>
 			{% if forloop.index < forloop.length %}
 			,
 			{% endif %}
@@ -25,10 +25,10 @@ layout: default
 	<hr />
 	<div class="page fix">
 		{% if page.previous %}
-		<span class="prev"><a href="{{page.previous.url}}">←《{{ page.previous.title }}》</a></span>
+		<span class="prev"><a href="{{ page.previous.url }}">←《{{ page.previous.title }}》</a></span>
 		{% endif %}
 		{% if page.next %}
-		<span class="next"><a href="{{page.next.url}}">《{{ page.next.title }}》→</a></span>
+		<span class="next"><a href="{{ page.next.url }}">《{{ page.next.title }}》→</a></span>
 		{% endif %}
 	</div>
 	<hr />
@@ -42,8 +42,8 @@ layout: default
 </div>
 <!--Disqus end-->
 
-<script src="/assets/js/jquery-min.js"></script>
-<script src="/assets/js/fullscreen.js"></script>
+<script src="./assets/js/jquery-min.js"></script>
+<script src="./assets/js/fullscreen.js"></script>
 <script type="text/javascript">
 $(function() {
 	var global = window;

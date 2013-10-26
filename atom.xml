@@ -13,12 +13,13 @@ title : Atom Feed
  <author>
    <name>{{ site.author.name }}</name>
    <email>{{ site.author.email }}</email>
+   <unused>未使用</unused>
  </author>
 
  {% for post in site.posts %}
  <entry>
    <title>{{ post.title }}</title>
-   <link href="{{ site.production_url }}{{ post.url }}"/>
+   <link href="/blog{{ site.production_url }}{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
    <id>h{{ site.production_url }}{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>

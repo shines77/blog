@@ -2,4 +2,5 @@ permalink: /:year/:month/:day/:title.html
 
 pygments: true
 markdown: rdiscount
-baseurl: ./
+url:      http://shines77.github.io
+baseurl:  /blog/

@@ -1,1 +1,0 @@
-{"name":"Blog","tagline":"shines77's blog","body":"blog\r\n====\r\n\r\n基于Jekyll构建，记录个人技术类文章。\r\n\r\nGitHub Pages不允许插件，因此所有语法高亮没有使用 GFM 格式书写，而都是用 {% highlight language %} 方式实现。\r\n\r\n演示地址: http://shines77.github.io/blog/\r\n","google":"","note":"Don't delete this file! It's used internally to help with page regeneration."}
